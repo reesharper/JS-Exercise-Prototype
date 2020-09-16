@@ -62,6 +62,9 @@ Person.prototype.toString = function(){
 
 const newPerson = new Person('Rees', 20);
 
+
+
+
 /*
   TASK 2
     - Write a Car constructor that initializes `model` and `milesPerGallon` from arguments.
@@ -76,9 +79,18 @@ const newPerson = new Person('Rees', 20);
         + The `drive` method should return a string "I ran out of fuel at x miles!" x being `odometer`.
 */
 
-function Car() {
-
+function Car(model, milesPerGallon) {
+  this.model = model;
+  this.milesPerGallon = milesPerGallon;
+  this.tank = 0;
+  this.odometer = 0;
 }
+
+Car.prototype.fill = function(gallons){
+  this.tank = (this.tank + gallons);
+}
+
+Car.prototype.fill(10);
 
 /*
   TASK 3
