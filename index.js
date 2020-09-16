@@ -130,10 +130,19 @@ Baby.prototype.play = function(){
   TASK 4
 
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+
+  1. Window Binding: this is a rare use case in which you are using a this keyword in the global scope where it is not being used by anything applying its rules to it. It also refers to the window object if using a browser and console object if using Node.
+
+  2. Implicit Binding: this is the most common use case because it only applys to an object with a method. whenever calling a this keywork using implicit binding it will look to the phrase to the left of the dot to see what the this keyword is refrencing.
+
+  3. Explicit Binding: this is the use case that utilizes 3 specific calls. they each pass in their arguments one by one. these calls are .call, .apply, .bind! .call and .apply both invoke the function right away yet .bind does not, it returns a new function in order to be invoked later in the code. 
+
+  4. New Binding: this is the second most common use case of the this keyword and utilizes its own keyword titled "new", which as the name implies, creates a new object. The "new" keyword once invoked with the this keyword refers to the new object that the "new" keyword created.
+  
+  
+  
+
+
 */
 
 
